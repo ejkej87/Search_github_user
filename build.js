@@ -8,8 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
-
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -101,10 +99,8 @@ var UsersList = function (_React$Component2) {
     value: function render() {
       return React.createElement(
         'div',
-        null,
-        ' ',
-        this.users,
-        ' '
+        { className: 'userBox' },
+        this.users
       );
     }
   }, {
@@ -133,7 +129,7 @@ var User = function (_React$Component3) {
     value: function render() {
       return React.createElement(
         'div',
-        null,
+        { className: 'user' },
         React.createElement('img', { src: this.props.user.avatar_url, style: { maxWidth: '100px' } }),
         React.createElement(
           'a',
@@ -146,3 +142,5 @@ var User = function (_React$Component3) {
 
   return User;
 }(React.Component);
+
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));

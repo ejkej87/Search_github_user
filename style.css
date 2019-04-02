@@ -1,0 +1,52 @@
+body {
+   font-family: 'Roboto Condensed', sans-serif;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+form {
+   display: block;
+   text-align: center;
+   font-size: 25px;
+   padding: 25px;
+}
+
+label {
+   display: block;
+}
+.userBox{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -ms-flex-pack: distribute;
+   -ms-flex-pack: distribute;
+   justify-content: space-around;
+}
+
+.user {
+   padding: 20px;
+   margin-bottom: 10px;
+   text-align: center;
+   background-color: #333;
+}
+
+.user a {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+}
+
+.user img {
+   display: block;
+   width: 100px;
+   padding: 2px;
+}
+
+
+
